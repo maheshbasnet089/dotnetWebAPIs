@@ -42,3 +42,4 @@
 /Users/manishbasnet/Desktop/dotnetAPIS/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/manishbasnet/Desktop/dotnetAPIS/bin/Debug/net7.0/System.CodeDom.dll
 /Users/manishbasnet/Desktop/dotnetAPIS/obj/Debug/net7.0/dotnetAPIS.csproj.Up2Date
+/Users/manishbasnet/Desktop/dotnetAPIS/obj/Debug/net7.0/dotnetAPIS.sourcelink.json

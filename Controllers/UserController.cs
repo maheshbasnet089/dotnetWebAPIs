@@ -32,19 +32,20 @@ namespace dotnetAPIS.Controllers
             return Ok(u);
         }
 
-        [HttpDelete("id")]
-        [Microsoft.AspNetCore.Mvc.Route("api/[Controller]/{id}")]
-        public ActionResult DeleteUser(int id){
-            Users? u = context.Users.Where(u=>u.UserId == id).FirstOrDefault();
-            if(u == null)
-                return NotFound();
-            else
-            {
-                context.Users.Remove(u);
-                context.SaveChanges();
-                return Ok();
-            }
-        }
+   [HttpDelete("{id}")] // Maps to: api/user/{id}
+public ActionResult DeleteUser(int id)
+{
+    var user = context.Users.FirstOrDefault(u => u.UserId == id);
+    if (user == null)
+    {
+        return NotFound();
+    }
+
+    context.Users.Remove(user);
+    context.SaveChanges();
+    return Ok();
+}
+
 
     }
 }
